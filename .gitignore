@@ -70,3 +70,4 @@ crashlytics-build.properties
 /MSBuild/
 /PackagesCopy/
 !/scripts/Packaging/NuGetRestoreProject.csproj
+#
