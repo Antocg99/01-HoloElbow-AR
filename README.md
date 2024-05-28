@@ -1,6 +1,6 @@
 # HoloElbow-AR
 
-Augmented Reality Module for Hololens 2 developed in Unity with MRTK packages for HoloElbow Project Thesis [[Antonio Cangelosi](https://github.com/Antocg99) and [Giacomo Riberi](https://github.com/giacomo-riberi)]
+Augmented Reality Module for Hololens 2 developed in Unity with MRTK packages for HoloElbow Project Thesis [[Antonio Cangelosi](https://github.com/Antocg99), [Giacomo Riberi](https://github.com/giacomo-riberi)]
 
 ## Overview
 
