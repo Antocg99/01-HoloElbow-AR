@@ -9,9 +9,15 @@ EditorBuildSettings:
     path: Assets/scenes/StartPage.unity
     guid: 98608a43e51368341a071505d1c04613
   - enabled: 1
-    path: Assets/scenes/HololensStreamingScene.unity
+    path: Assets/Scenes/HololensStreamingScene.unity
     guid: 94be6d8fabbf2254284fa025ddd0f10c
   m_configObjects:
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: dff580d681d7a1849b45b641932b752c,
+      type: 2}
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000,
+      guid: 48090baf0286c8c4fb3b02596a0742c4, type: 2}
+    com.unity.input.settings: {fileID: 11400000, guid: 89efe92ad67dbea4089f0fd775b5c4a1,
+      type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 8ddf07e97b7500a4cbe92bba68d77e5e,
       type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 8fd51c8464cdb534e9602184f2a5ed3e,
