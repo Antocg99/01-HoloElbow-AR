@@ -915,7 +915,6 @@ GameObject:
   - component: {fileID: 46439193}
   - component: {fileID: 46439192}
   - component: {fileID: 46439191}
-  - component: {fileID: 46439196}
   m_Layer: 0
   m_Name: sceneContainer
   m_TagString: Untagged
@@ -1029,18 +1028,6 @@ Transform:
   - {fileID: 1656456422}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &46439196
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 46439190}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c212fdbc3973d8343824eed30addc4b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &49659135
 GameObject:
   m_ObjectHideFlags: 0
@@ -3506,7 +3493,7 @@ PrefabInstance:
         type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 46439196}
+      objectReference: {fileID: 0}
     - target: {fileID: 7440800412470431853, guid: 45fd0ad89d6d17b4fbe68eb48dbe9de9,
         type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -108279,8 +108266,8 @@ GameObject:
   - component: {fileID: 1847510363}
   - component: {fileID: 1847510362}
   - component: {fileID: 1847510361}
-  - component: {fileID: 1847510360}
   - component: {fileID: 1847510364}
+  - component: {fileID: 1847510365}
   m_Layer: 0
   m_Name: UdpSocket
   m_TagString: Untagged
@@ -108288,30 +108275,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1847510360
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1847510359}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c4bc489ce13ea140aec92107120d3bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  marker1_guide: {fileID: 700847248}
-  marker2_guide: {fileID: 1186425952}
-  marker3_guide: {fileID: 1244986012}
-  marker4_guide: {fileID: 1568227405}
-  marker1_stend: {fileID: 544793008}
-  marker2_stend: {fileID: 264375617}
-  marker3_stend: {fileID: 1333643117}
-  marker4_stend: {fileID: 541365903}
-  referenceFrameGameObject: {fileID: 917067252}
-  guideFrameGameObject: {fileID: 1332375857}
-  textStatusGuide1: {fileID: 0}
-  textStatusGuide2: {fileID: 0}
 --- !u!114 &1847510361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -108362,9 +108325,33 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1847510359}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a48fa2655ef679b41a5b461d5f38b480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tempStr: 
+  udpSocket: {fileID: 1847510362}
+  marker1_guide: {fileID: 700847248}
+  marker2_guide: {fileID: 1186425952}
+  marker3_guide: {fileID: 1244986012}
+  marker4_guide: {fileID: 1568227405}
+  marker1_stend: {fileID: 544793008}
+  marker2_stend: {fileID: 264375617}
+  marker3_stend: {fileID: 1333643117}
+  marker4_stend: {fileID: 541365903}
+  referenceFrameGameObject: {fileID: 917067252}
+  guideFrameGameObject: {fileID: 1332375857}
+--- !u!114 &1847510365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847510359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c4bc489ce13ea140aec92107120d3bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   udpSocket: {fileID: 1847510362}
@@ -108378,8 +108365,6 @@ MonoBehaviour:
   marker4_stend: {fileID: 541365903}
   referenceFrameGameObject: {fileID: 917067252}
   guideFrameGameObject: {fileID: 1332375857}
-  textStatusGuide1: {fileID: 0}
-  textStatusGuide2: {fileID: 0}
 --- !u!1 &1849725021
 GameObject:
   m_ObjectHideFlags: 0

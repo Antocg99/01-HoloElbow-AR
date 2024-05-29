@@ -9,7 +9,7 @@ using System.Globalization;
 public class CoordinateReceiver : MonoBehaviour
 {
     string tempStr = string.Empty;
-    UdpSocket udpSocket;
+    public UdpSocket udpSocket;
 
     [Header("Add here guide markers")]
     public GameObject marker1_guide;
@@ -24,8 +24,6 @@ public class CoordinateReceiver : MonoBehaviour
 
     public GameObject referenceFrameGameObject;
     public GameObject guideFrameGameObject;
-    public TextMeshProUGUI textStatusGuide1;
-    public TextMeshProUGUI textStatusGuide2;
     // Start is called before the first frame update
     void Start()
     {
@@ -48,26 +46,23 @@ public class CoordinateReceiver : MonoBehaviour
 
         if (markerData.type == "guide")
         {
-            marker1_guide.transform.position = m1Vector;
-            marker2_guide.transform.position = m2Vector;
-            marker3_guide.transform.position = m3Vector;
-            marker4_guide.transform.position = m4Vector;
-            textStatusGuide1.text = "<color=green>kWires Status: Tracked</color>";
-            textStatusGuide2.text = "<color=green>kWires Status: Tracked</color>";
+            marker1_guide.transform.localPosition = m1Vector;
+            marker2_guide.transform.localPosition = m2Vector;
+            marker3_guide.transform.localPosition = m3Vector;
+            marker4_guide.transform.localPosition = m4Vector;
             referenceFrameGameObject.GetComponent<ReferenceFrameCalculatorStand>().enabled = false;
             guideFrameGameObject.GetComponent<ReferenceFrameCalculatorGeneric>().enabled = true;
         }
         if (markerData.type == "untracked")
         {
-            textStatusGuide1.text = "<color=red>kWires Status: Untracked</color>";
-            textStatusGuide2.text = "<color=red>kWires Status: Untracked</color>";
+ 
         }
         if (markerData.type == "phantom")
         {
-            marker1_stend.transform.position = m1Vector;
-            marker2_stend.transform.position = m2Vector;
-            marker3_stend.transform.position = m3Vector;
-            marker4_stend.transform.position = m4Vector;
+            marker1_stend.transform.localPosition = m1Vector;
+            marker2_stend.transform.localPosition = m2Vector;
+            marker3_stend.transform.localPosition = m3Vector;
+            marker4_stend.transform.localPosition = m4Vector;
             referenceFrameGameObject.GetComponent<ReferenceFrameCalculatorStand>().enabled = true;
             guideFrameGameObject.GetComponent<ReferenceFrameCalculatorGeneric>().enabled = false;
 
@@ -75,15 +70,16 @@ public class CoordinateReceiver : MonoBehaviour
 
         if (markerData.type == "phantomDef")
         {
-            marker1_stend.transform.position = m1Vector;
-            marker2_stend.transform.position = m2Vector;
-            marker3_stend.transform.position = m3Vector;
-            marker4_stend.transform.position = m4Vector;
+            marker1_stend.transform.localPosition = m1Vector;
+            marker2_stend.transform.localPosition = m2Vector;
+            marker3_stend.transform.localPosition = m3Vector;
+            marker4_stend.transform.localPosition = m4Vector;
             referenceFrameGameObject.GetComponent<ReferenceFrameCalculatorStand>().enabled = false;
             guideFrameGameObject.GetComponent<ReferenceFrameCalculatorGeneric>().enabled = true;
         }
     }
 }
+
 
 public class markerDataDecod
 {
@@ -93,5 +89,6 @@ public class markerDataDecod
     public float[] m3;
     public float[] m4;
 }
+
 
 

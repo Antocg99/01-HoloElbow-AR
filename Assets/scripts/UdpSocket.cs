@@ -22,7 +22,6 @@ public class UdpSocket : MonoBehaviour
 
     //PythonTest pythonTest;
     CoordinateReceiver coordinateReceiver;
-    CoordinateReceiver_v2 coordinateReceiver_2;
 
     public void SendData(string message) // Use to send data to Python
     {
@@ -61,9 +60,6 @@ public class UdpSocket : MonoBehaviour
     {
         //pythonTest = FindObjectOfType<PythonTest>(); // Instead of using a public variable
         coordinateReceiver = FindObjectOfType<CoordinateReceiver>();
-        coordinateReceiver_2 = FindObjectOfType<CoordinateReceiver_v2>();
-
-
     }
 
     // Receive data, update packets received
@@ -95,7 +91,6 @@ public class UdpSocket : MonoBehaviour
         // PROCESS INPUT RECEIVED STRING HERE
         //pythonTest.UpdatePythonRcvdText(input); // Update text by string received from python
         coordinateReceiver.UpdatePythonData(dataToProcess);
-        coordinateReceiver_2.UpdatePythonData(dataToProcess);
         if (!isTxStarted) // First data arrived so tx started
         {
             isTxStarted = true;
