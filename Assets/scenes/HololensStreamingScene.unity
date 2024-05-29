@@ -1041,10 +1041,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c212fdbc3973d8343824eed30addc4b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scriptsToToggle:
-  - {fileID: 46439193}
-  - {fileID: 46439192}
-  debugText: {fileID: 809382974}
 --- !u!1 &49659135
 GameObject:
   m_ObjectHideFlags: 0
@@ -11398,18 +11394,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.0137648, y: 0.02140062, z: 0.011019262}
   m_Center: {x: -0.015770923, y: 0.014348692, z: -0.015377697}
---- !u!114 &809382974 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 937783102, guid: 45fd0ad89d6d17b4fbe68eb48dbe9de9,
-    type: 3}
-  m_PrefabInstance: {fileID: 236797845}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &821730454
 GameObject:
   m_ObjectHideFlags: 0

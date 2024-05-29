@@ -54,8 +54,8 @@ public class CoordinateReceiver_v2 : MonoBehaviour
             marker4_guide.transform.localPosition = m4Vector;
             textStatusGuide1.text = "<color=green>kWires Status: Tracked</color>";
             textStatusGuide2.text = "<color=green>kWires Status: Tracked</color>";
-            referenceFrameGameObject.GetComponent<ReferenceFrameCalculator>().enabled = false;
-            guideFrameGameObject.GetComponent<ReferenceFrameCalculator>().enabled = true;
+            referenceFrameGameObject.GetComponent<ReferenceFrameCalculatorStand>().enabled = false;
+            guideFrameGameObject.GetComponent<ReferenceFrameCalculatorGeneric>().enabled = true;
         }
         if (markerData.type == "untracked")
         {
@@ -68,8 +68,8 @@ public class CoordinateReceiver_v2 : MonoBehaviour
             marker2_stend.transform.localPosition = m2Vector;
             marker3_stend.transform.localPosition = m3Vector;
             marker4_stend.transform.localPosition = m4Vector;
-            referenceFrameGameObject.GetComponent<ReferenceFrameCalculator>().enabled = true;
-            guideFrameGameObject.GetComponent<ReferenceFrameCalculator>().enabled = false;
+            referenceFrameGameObject.GetComponent<ReferenceFrameCalculatorStand>().enabled = true;
+            guideFrameGameObject.GetComponent<ReferenceFrameCalculatorGeneric>().enabled = false;
 
         }
 
@@ -79,8 +79,8 @@ public class CoordinateReceiver_v2 : MonoBehaviour
             marker2_stend.transform.localPosition = m2Vector;
             marker3_stend.transform.localPosition = m3Vector;
             marker4_stend.transform.localPosition = m4Vector;
-            referenceFrameGameObject.GetComponent<ReferenceFrameCalculator>().enabled = false;
-            guideFrameGameObject.GetComponent<ReferenceFrameCalculator>().enabled = true;
+            referenceFrameGameObject.GetComponent<ReferenceFrameCalculatorStand>().enabled = false;
+            guideFrameGameObject.GetComponent<ReferenceFrameCalculatorGeneric>().enabled = true;
         }
     }
 }

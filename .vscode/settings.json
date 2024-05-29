@@ -1,6 +1,5 @@
 {
-    "files.exclude":
-    {
-        
-    }
+    "files.exclude": {
+    },
+    "dotnet.defaultSolution": "01-HoloElbow-AR.sln"
 }
